@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real Estate Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Real Estate Price Predictor</h1>
+        
+        <form method="POST" action="/predict">
+            <label for="area">Area (sq ft):</label>
+            <input type="number" step="0.1" id="area" name="age" required><br><br>
+
+            <label for="bedrooms">Bedrooms:</label>
+            <input type="number" id="bedrooms" name="distance" required><br><br>
+
+            <label for="property-age">Age (in years):</label>
+            <input type="number" id="property-age" name="stores" required><br><br>
+
+            <button type="submit" class="predict-btn">Predict Price</button>
+        </form>
+
+        {% if prediction %}
+        <div class="result">
+            <h2>Estimated Price: ₹{{ prediction }} Lakhs</h2>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
