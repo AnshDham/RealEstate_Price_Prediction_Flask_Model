@@ -2,8 +2,6 @@
 
 An intelligent web application that predicts real estate prices based on user input. Powered by machine learning and built with Flask, this project embodies data transparency, user-friendly design, and technical elegance.
 
-> Crafted by [BDVTechSys](#) — a TechWizard initiative blending innovation with storytelling.
-
 ---
 
 ## 🚀 Features
