@@ -23,4 +23,12 @@ An intelligent web application that predicts real estate prices based on user in
 
 ---
 
+## How to Run
+
+1. Clone the repo
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run: `python app.py`
+
+---
+
 
